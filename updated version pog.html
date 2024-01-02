@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Weed Strains</title>
+
+   
+    <link rel="stylesheet" href="file:///C:/Users/Fish%20Owens/Desktop/give%20it%20a%20name/github.html">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;   
+            margin: 0;
+            padding: 0;
+            background-color: #0ddac9; 
+            color: #064ead;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            color: rgb(201, 2, 69);
+            transition: background-color 0.3s;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0db907;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        #Sativa:checked ~ #sectionSativa,
+        #INDICA:checked ~ #sectionINDICA,
+        #HYBRID:checked ~ #sectionHYBRID {
+            display: block;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: rgb(201, 2, 69);
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        label:hover {
+            background-color: #66ff00;
+        }
+
+        img {
+            max-width: 100%;
+            height: 300px;
+            display: block;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 400px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+           
+        }
+
+        .button:hover,
+        .button:active {
+            background-color: #1b8302;
+        }
+
+        @media (max-width: 300px) {
+            label {
+                margin: 0 5px;
+            }
+
+            img {
+                margin: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="header">
+        <h1>Different Types of Weed Strains</h1>
+    </header>
+
+    <nav>
+        <label class="btn btn-primary" for="Sativa">Sativa</label>
+        <label class="btn btn-success" for="INDICA">Indica</label>
+        <label class="btn btn-warning" for="HYBRID">Hybrid</label>
+    </nav>
+
+    <main>
+        <input type="radio" id="Sativa" name="weedType" checked>
+        <input type="radio" id="INDICA" name="weedType">
+        <input type="radio" id="HYBRID" name="weedType">
+
+        <section id="sectionSativa">
+            <h2>Sativa</h2>
+            <img src="C:\Users\Fish Owens\Downloads\colorful-cannabis-strains.jpg" alt="Image of Sativa">
+            <p>Sativa strains are known for their energizing effects. They are often associated with increased creativity and focus.</p>
+            <p>:↓15dollars Per Gram↓</p>
+            <p>↓             	↓</p>
+            <a class="btn btn-info button" href="https://www.chroniccandy.com/">Looking to buy?</a>
+        </section>
+
+        <section id="sectionINDICA">
+            <h2>Indica</h2>
+            <img src="C:\Users\Fish Owens\Downloads\lightshade-gorilla-glue-strain-2.jpg" alt="Image of Indica">
+            <p>Indica strains are known for their relaxing and sedative effects. They are often chosen for relaxation and to help with sleep. </p>
+            <p>↓30dollars Per Gram↓</p>
+            <p>↓             	↓</p>
+            <a class="btn btn-info button" href="https://www.chroniccandy.com/">Looking to buy?</a>
+        </section>
+
+        <section id="sectionHYBRID">
+            <h2>Hybrid</h2>
+            <img src="https://via.placeholder.com/800x400/32CD32/000000?text=Hybrid" alt="Image of Hybrid">
+            <p>Hybrid strains are a combination of Sativa and Indica. They aim to provide a balance between the energizing effects of Sativa and the relaxing effects of Indica.</p>
+            <P>↓80dollars Per Gram↓</P>  
+            <p>↓             	↓</p>
+            <a class="btn btn-info button" href="https://www.chroniccandy.com/">Looking to buy?</a>
+        </section>
+    </main>
+
+    
+    <script src="file:///C:/Users/Fish%20Owens/Desktop/give%20it%20a%20name/github.html"></script>
+    <script src="file:///C:/Users/Fish%20Owens/Desktop/give%20it%20a%20name/github.html"></script>
+    <script src="file:///C:/Users/Fish%20Owens/Desktop/give%20it%20a%20name/github.html"></script>
+
+    <script>
+        
+        document.querySelectorAll('input[name="weedType"]').forEach(function (input) {
+            input.addEventListener('change', function () {
+                const header = document.getElementById('header');
+                const color = this.id === 'Sativa' ? '#FFD700' : (this.id === 'INDICA' ? '#8A2BE2' : '#32CD32');
+                header.style.backgroundColor = color;
+            });
+        });
+    </script>
+</body>
+</html>
